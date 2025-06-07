@@ -1,0 +1,10 @@
+let pop=document.querySelector('.popup');
+let full=document.querySelector('.overlay');
+
+function openPopup() {
+    document.getElementById("popupOverlay").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+}

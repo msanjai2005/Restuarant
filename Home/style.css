@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    font-family: 'Lobster', cursive;
+}
+
+/*NAVBAR*/
+.navbar{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: rgb(233, 192, 68);
+    z-index: 2;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    display: inline-block;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 18px;
+}
+.bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 110px;
+    height: 70px;
+}
+.bar a{
+    text-decoration: none;
+    color: black;
+}
+.bar:hover{
+    background: hsla(23, 100%, 50%, 0.223);
+}
+/* Welcome & Signature Dish*/
+.art{
+    background-color: #000000e2;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    top: 170px;
+    width: 100%;
+    color: rgb(235, 134, 51);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.welcome{
+    width: 700px;
+    animation: entry1 0.7s ease-out;
+}
+.welcome p{
+    font-size: 22px;
+    margin-top: 30px;
+}
+@keyframes entry1{
+    from{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.signaturedish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: entry2 0.9s ease-out;
+}
+.signaturedish img{
+    border-radius: 50%;
+    transition: transform 1s;
+}
+.signaturedish img:hover{
+    transform: scale(1.05);
+}
+@keyframes entry2{
+    from{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.tblbook{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    background-color:#f2360c;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition:background-color  1s;
+}
+.tblbook:hover{
+    background-color: #242323;
+    border: 2px solid #f2360c;
+    color: rgb(255, 255, 255);
+}
+.tblbook:active{
+    transform: scale(0.99);
+}
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #353535;
+    color: white;
+}
+.footer .foot{
+    width: 250px;
+}
+.foot h4{
+    margin-bottom: 20px;
+}
+.ended{
+    width: 100%;
+    height:100px ;
+    background-color: #201f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.end a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.copy{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #201f1f;
+}
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+/* Popup */
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.popup h2{
+    margin-bottom: 10px;
+}
+/* Image container */
+.pref {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.pref img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pref img:hover {
+    transform: scale(1.1);
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup button:hover {
+    background: darkred;
+}
+

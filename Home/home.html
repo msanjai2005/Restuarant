@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Heaven-Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Images/spoon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="over"></div>
+    <div class="navbar">
+        <div class="name">
+            <img src="../images/spoon.png" alt="" width="60px" height="50px">
+            <h1 class="head"  style="font-family: 'Rock Salt', cursive;">Spicy Heaven</h1>
+        </div>
+        <div class="nav">
+            <p class="bar"><a href="../Home/home.html">Home</a></p>
+            <p class="bar"><a href="../Menu/menu.html">Menu</a></p>
+            <p class="bar"><a href="../Location/location.html">Location</a></p>
+            <p class="bar" style="padding-left:20px; width: 90px; " onclick="openPopup()" ><a href="#">Online Order</a></p>
+            <p class="bar" style="padding: 0 15px 0 15px;" ><a href="#">Order List & Payments</a></p>
+        </div>
+    </div>
+    <div class="art">
+        <div class="container">
+            <div class="welcome">
+                <h1> Enjoy Your Delicious & Spicy Food</h1>
+                <p>Spicy Heaven is known for creating unforgettable food experiences.
+                     We believe that food is therapy and try to put up a 
+                     smile on your face with our culinary skills.
+                </p>
+                <a href="../TableBook/form.html"><button class="tblbook">BOOK YOUR TABLE</button></a>
+            </div>
+            <div class="signaturedish">
+                <img src="../images/sign img.jpeg" alt="Not Available">
+                <h2>Our Signature Dish</h2>
+            </div>
+        </div>
+        <div class="overlay" id="popupOverlay">
+            <div class="popup">
+                <h2>order Now</h2>
+                <div class="pref">
+                    <a href="../Menu/menu.html"><img src="../images/swiggy.jpg" alt="Swiggy" width="100px" height="100px"></a>
+                    <a href="../Menu/menu.html"><img src="../images/zomato.jpg" alt="Zomato" width="100px" height="100px"></a>
+                </div>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot">
+            <h4>Our Address</h4>
+            <p>No.34, 72A, B Ramachandra Adithanar Rd,
+                Gandhi Nagar, Adyar,
+                Chennai, Tamil Nadu ,India.
+            </p>
+            <p>
+                Arabian Restaurant, Karamadai Rd,
+                 Housing Unit, Mettupalayam, 
+                 Tamil Nadu,India-641301.
+            </p>
+        </div>
+        <div class="foot">
+            <h4>Business Hours</h4>
+            <p>Mon: 11:00 AM – 11:00 PM</p>
+            <p>Tue: 11:00 AM – 11:00 PM</p>
+            <p>Wed: 11:00 AM – 11:00 PM</p>
+            <p>Thu: 11:00 AM – 11:00 PM</p>
+            <p>Fri: 11:00 AM – 11:00 PM</p>
+            <p>Sat: 11:00 AM – 11:00 PM</p>
+            <p>Sun: 11:00 AM – 11:00 PM</p>
+        </div>
+        <div class="foot"> 
+            <h4>Contact as</h4>
+            <h5> Mettupalayam</h5>
+            <p> +91 8481848484</p>
+            <p> +91 8420533005</p>
+            <h5>Gandhi Nagar</h5>
+            <p> +91 99039 80011</p>
+            <p> +033 4804 9142</p>
+        </div>
+    </div>
+    <div class="ended">
+        <div class="end">
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Menu</a></p>
+            <p><a href="#">Location</a></p>
+            <p><a href="#">Online Order</a></p>
+        </div>
+    </div>
+    <div class="copy">
+        <p>&copy 2022 Spicy Heaven. | All Rights Reserved</p>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>

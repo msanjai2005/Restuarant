@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Spicy Heaven-Menu</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">
+            <img src="../images/spoon.png" alt="" width="60px" height="50px">
+            <h1 class="head"  style="font-family: 'Rock Salt', cursive;">Spicy Heaven</h1>
+        </div>
+        <div class="nav">
+            <p class="bar"><a href="../Home/home.html">Home</a></p>
+            <p class="bar"><a href="../Menu/menu.html">Menu</a></p>
+            <p class="bar"><a href="../Location/location.html">Location</a></p>
+            <p class="bar" style="padding-left:20px; width: 90px;"><a href="#"  onclick="openPopup()">Online Order</a></p>
+            <p class="bar" style="padding: 0 15px 0 15px;"><a href="#">Order List & Payments</a></p>
+        </div>
+        
+    </div>
+    <div class="space"></div>
+    <center>
+        
+        <h1>Choose your Order</h1>
+        <div class="menulist">
+            <h2>Chicken Dishes 🍗</h2><hr>
+            <div class="list_typ_c list_typ" >
+            </div> 
+
+            <h2>Mutton Dishes 🥩</h2><hr>
+            <div class="list_typ_m list_typ">
+            </div>  
+
+            <h2>Fish & Seafood Dishes 🐟🦐</h2><hr>
+            <div class="list_typ_f list_typ">   
+            </div>  
+
+            <h2>Egg Dishes 🥚</h2><hr>
+            <div class="list_typ_e list_typ ">   
+            </div> 
+
+            <h2>Snacks Items 🍟</h2><hr>
+            <div class="list_typ_s list_typ">      
+            </div>    
+        </div>
+    </center>
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>order Now</h2>
+            <div class="pref">
+                <a href="../Menu/menu.html"><img src="../images/swiggy.jpg" alt="Swiggy" width="100px" height="100px"></a>
+                <a href="../Menu/menu.html"><img src="../images/zomato.jpg" alt="Zomato" width="100px" height="100px"></a>
+            </div>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+</body>
+<script type="module" src="menu.js"></script>
+<script>
+    function openPopup() {
+    document.getElementById("popupOverlay").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+}
+</script>
+</html>
