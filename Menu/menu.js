@@ -1,8 +1,4 @@
-import {Chicken} from '../menus.js'
-import {Mutton} from  '../menus.js'
-import {Fish} from '../menus.js'
-import {Egg} from  '../menus.js'
-import {Snack} from  '../menus.js'
+import {Chicken,Snack,Mutton,Fish,Egg} from '../menus.js'
 // popup
 
 
@@ -11,24 +7,23 @@ let item_c="";
 Chicken.forEach((Chickens) => {
     item_c += `
         <div class="dish">
-                    <div class="div">
-                        <div><img src="${Chickens.image}" alt=""></div>
-                        <div>
-                            <h3 id="name">${Chickens.name} </h3>
-                            <p id="price">Price :</p><span> ₹ ${Chickens.price}</span><br>
-                            <p>Quatity : </p>
-                            <select name="" class="quantity-${Chickens.id}">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">4</option>
-                                <option value="4">5</option>
-                                <option value="5">6</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button id="btn" class="btn-${Chickens.id}">Add</button>
-                </div><hr>
-    `
+            <div class="div">
+                <div><img src="${Chickens.image}" alt=""></div>
+                <div>
+                    <h3 id="name">${Chickens.name} </h3>
+                    <p id="price">Price :</p><span> ₹ ${Chickens.price}</span><br>
+                    <p>Quatity : </p>
+                    <select name="" class="quantity-${Chickens.id}">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">4</option>
+                        <option value="4">5</option>
+                        <option value="5">6</option>
+                    </select>
+                </div>
+            </div>
+            <button id="btn" class="btn-${Chickens.id}">Add</button>
+        </div><hr>`
 });
 
 document.querySelector('.list_typ_c').innerHTML= item_c;
